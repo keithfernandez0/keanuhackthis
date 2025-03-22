@@ -54,7 +54,7 @@ const CrimeForm = ({ onClose }: { onClose: () => void }) => {
   };
 
   return (
-    <div className="absolute inset-0 bg-opacity-30 flex justify-center items-center">
+    <div className=" hidden absolute inset-0 bg-opacity-30 flex justify-center items-center">
       <div className="bg-white rounded-lg p-5 w-96 shadow-lg">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold text-gray-800">Add Crime</h2>
