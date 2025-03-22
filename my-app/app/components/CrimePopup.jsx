@@ -1,3 +1,5 @@
+// CrimePopup.jsx
+
 export default function CrimePopup({ crime, onClose }) {
     return (
       <div className="absolute bg-white shadow-md p-4 rounded-xl">
