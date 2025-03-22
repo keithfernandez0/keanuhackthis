@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CrimeForm from "../components/CrimeForm";
-import CrimeMap from "../components/CrimeMap";
+import CrimeMap from "../components/CrimeMapUI";
 
 export default function Home() {
   const [crimes, setCrimes] = useState([]);
