@@ -2,6 +2,10 @@
 
 ## Overview
 
+![CrimeFormUI](https://github.com/user-attachments/assets/e69176a7-7155-4c9e-a34d-3f741b0b72de)
+![Screenshot_20250322_143449](https://github.com/user-attachments/assets/96afee7a-598d-4257-8447-e76d0634736d)
+![CrimeFormReadme](https://github.com/user-attachments/assets/b92c9e4f-be2f-4aa2-a524-0411e5deb368)
+
 The **Crime Map** project is a web application that allows users to anonymously report and tag crimes on a map. It leverages the **Google Maps API** for interactive mapping and categorizes crimes based on severity and type. Users can submit crime reports with minimal text input through dropdown menus, making the process quick and efficient.
 
 ## Features
