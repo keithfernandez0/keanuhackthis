@@ -1,3 +1,5 @@
+// CrimeMap.jsx
+
 import { useEffect, useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import CrimePopup from "./CrimePopup";
