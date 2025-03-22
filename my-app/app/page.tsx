@@ -1,7 +1,7 @@
 "use client";
 
-import { GoogleMap } from "@react-google-maps/api";
-import { LoadScript } from "@react-google-maps/api";
+import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import { useMemo } from "react";
 
 const googleMapsApiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY as string;
 
@@ -10,12 +10,23 @@ if (!googleMapsApiKey) {
 }
 
 export default function Home() {
+  const { isLoaded, loadError } = useLoadScript({
+    googleMapsApiKey,
+  });
+
+  const center = useMemo(() => ({ lat: 37.7749, lng: -122.4194 }), []);
+
+  if (loadError) return <div>Error loading maps</div>;
+  if (!isLoaded) return <div>Loading...</div>;
+
   return (
     <div>
       <h3>HELLO WORLD</h3>
-      <LoadScript googleMapsApiKey={googleMapsApiKey}>
-        <GoogleMap />
-      </LoadScript>
+      <GoogleMap
+        mapContainerStyle={{ width: "100%", height: "500px" }}
+        center={center}
+        zoom={10}
+      />
     </div>
   );
 }
